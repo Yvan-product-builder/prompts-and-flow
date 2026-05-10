@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yvan Joubert · Product Builder No-Code · Lyon</title>
+  <meta name="description" content="Yvan Joubert, Product Builder No-Code à Lyon. Je construis des outils sur-mesure avec Bubble, Make, Airtable et IA pour les indépendants, maisons d'hôtes, vignerons et coiffeurs. Disponible en freelance ou pour un poste salarié." />
+  <meta name="keywords" content="no-code, no code, Lyon, freelance, Bubble, Make, Airtable, AppSheet, automatisation, product builder, Yvan Joubert, Prompts and Flow" />
+  <meta name="author" content="Yvan Joubert" />
+  <link rel="canonical" href="https://promptsandflow.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yvan Joubert · Product Builder No-Code · Lyon" />
+  <meta property="og:description" content="Je construis des outils sur-mesure pour automatiser ton activité. Bubble, Make, Airtable, IA. Disponible à Lyon." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://promptsandflow.com/" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yvan Joubert · Product Builder No-Code" />
+  <meta name="twitter:description" content="Outils sur-mesure no-code pour indépendants et PME. Lyon." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚡%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yvan Joubert",
+    "jobTitle": "Product Builder No-Code",
+    "url": "https://promptsandflow.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Les Chères",
+      "addressRegion": "Rhône",
+      "addressCountry": "FR"
+    },
+    "knowsAbout": ["No-code", "Bubble", "Make", "Airtable", "AppSheet", "Automatisation", "IA"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Prompts & Flow"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Theme toggle -->
+  <button class="theme-toggle" aria-label="Basculer le thème" id="themeToggle">
+    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">
+      <span class="nav-logo-mark">⚡</span>
+      <span>Prompts &amp; Flow</span>
+    </a>
+    <div class="nav-links">
+      <a href="#projets">Projets</a>
+      <a href="#services">Services</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact" class="nav-cta">Me contacter</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-grid">
+      <div class="hero-meta">
+        <span class="status-dot"></span>
+        <span>Disponible · Lyon &amp; Rhône</span>
+      </div>
+
+      <h1 class="hero-title">
+        Je construis des <em>outils no-code</em> qui font gagner du temps aux <span class="hero-rotate" id="heroRotate">indépendants</span>.
+      </h1>
+
+      <p class="hero-sub">
+        Yvan Joubert — Product Builder certifié <abbr title="Répertoire National des Certifications Professionnelles">RNCP</abbr> 39108. 25 ans d'expérience cross-sector, stack Bubble · Make · Airtable · IA. Disponible en freelance ou pour un poste salarié.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projets" class="btn btn-primary">
+          Voir mes projets
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Démarrer un projet</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">25</div>
+          <div class="stat-label">ans d'expérience<br>cross-sector</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">7+</div>
+          <div class="stat-label">projets no-code<br>livrés</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">RNCP</div>
+          <div class="stat-label">Niveau 6<br>Bac+3/4</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee de stack -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Bubble</span><span>·</span>
+        <span>Make</span><span>·</span>
+        <span>Airtable</span><span>·</span>
+        <span>AppSheet</span><span>·</span>
+        <span>Lovable</span><span>·</span>
+        <span>Cloudflare</span><span>·</span>
+        <span>Claude API</span><span>·</span>
+        <span>Notion</span><span>·</span>
+        <span>Figma</span><span>·</span>
+        <span>Supabase</span><span>·</span>
+        <span>Bubble</span><span>·</span>
+        <span>Make</span><span>·</span>
+        <span>Airtable</span><span>·</span>
+        <span>AppSheet</span><span>·</span>
+        <span>Lovable</span><span>·</span>
+        <span>Cloudflare</span><span>·</span>
+        <span>Claude API</span><span>·</span>
+        <span>Notion</span><span>·</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Deux façons de travailler ensemble</h2>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-tag">Pour les entreprises</div>
+        <h3>Mission freelance</h3>
+        <p>Tu as un process manuel chronophage, un besoin d'app interne, ou tu veux automatiser ta prospection ? Je construis l'outil sur-mesure avec la stack la plus adaptée — sans surenchère technique.</p>
+        <ul class="service-list">
+          <li>Apps internes (Bubble, AppSheet)</li>
+          <li>Automatisations (Make, n8n)</li>
+          <li>CRM &amp; bases métier (Airtable)</li>
+          <li>Intégrations IA (Claude API, GPT)</li>
+        </ul>
+        <a href="#contact" class="service-link">Discuter d'une mission →</a>
+      </article>
+
+      <article class="service-card service-card-accent">
+        <div class="service-tag">Pour les recruteurs</div>
+        <h3>Poste salarié</h3>
+        <p>Je cherche à rejoindre une équipe produit ou tech à Lyon ou en remote. Mon profil hybride — 25 ans en banque, RH et achats + certification no-code — me rend opérationnel sur les sujets métier autant que techniques.</p>
+        <ul class="service-list">
+          <li>No-Code Developer / Product Builder</li>
+          <li>Automation Specialist</li>
+          <li>Make / Airtable / Bubble Specialist</li>
+          <li>Ouvert au CDI, CDD, alternance</li>
+        </ul>
+        <a href="#contact" class="service-link">Voir mon CV →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="projects" id="projets">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Projets <em>livrés</em> &amp; en production</h2>
+      <p class="section-sub">Sept réalisations concrètes. Chaque projet documenté, testé, et pensé pour un vrai utilisateur final.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- PlayOff -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-num">P/01</span>
+          <span class="project-status status-live">Certification</span>
+        </div>
+        <h3 class="project-title">PlayOff Amateurs</h3>
+        <p class="project-desc">Plateforme de réservation de terrains et gestion de compétitions sportives. Projet de fin de certification RNCP39108 — 12 semaines, 6 sprints, soutenance orale validée.</p>
+        <div class="project-stack">
+          <span>Bubble</span>
+          <span>Airtable</span>
+          <span>Make</span>
+          <span>Figma</span>
+        </div>
+        <div class="project-highlight">
+          MVP avec 4 entités de données, Privacy Rules configurées, automations conditionnelles via Make.
+        </div>
+      </article>
+
+      <!-- Livret -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-num">P/02</span>
+          <span class="project-status status-live">En production</span>
+        </div>
+        <h3 class="project-title">Livret d'Accueil IA</h3>
+        <p class="project-desc">Livret HTML multilingue premium pour locations Airbnb. Génération automatisée via pipeline Airtable → Make → Claude API → Drive. Démo live sur Cloudflare Pages.</p>
+        <div class="project-stack">
+          <span>Cloudflare</span>
+          <span>Claude API</span>
+          <span>Make</span>
+          <span>Airtable</span>
+        </div>
+        <div class="project-highlight">
+          Trois offres commerciales (gratuit / 27€ / 197€) — vendu sur Gumroad et Etsy.
+        </div>
+      </article>
+
+      <!-- ChantierFlow -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-num">P/03</span>
+          <span class="project-status status-live">En production</span>
+        </div>
+        <h3 class="project-title">ChantierFlow</h3>
+        <p class="project-desc">Outil de suivi de chantier pour artisans du bâtiment. Gestion des interventions, planning équipe, photos terrain et reporting client — pensé pour un usage 100% mobile sur le terrain.</p>
+        <div class="project-stack">
+          <span>AppSheet</span>
+          <span>Google Sheets</span>
+          <span>Make</span>
+        </div>
+        <div class="project-highlight">
+          Accessible hors-ligne, notifications automatiques aux clients à chaque étape.
+        </div>
+      </article>
+
+      <!-- Site Fabrice -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-num">P/04</span>
+          <span class="project-status status-live">En production</span>
+        </div>
+        <h3 class="project-title">Site Artisan Raguin</h3>
+        <p class="project-desc">Site vitrine pour Fabrice Raguin, plâtrier-peintre à Lyon. Formulaire de devis RGPD-compliant, base Supabase avec RLS, stack React/TypeScript/Tailwind. Déploiement GitHub → Vercel.</p>
+        <div class="project-stack">
+          <span>Lovable</span>
+          <span>Supabase</span>
+          <span>Vercel</span>
+        </div>
+        <div class="project-highlight">
+          Formulaire devis avec validation côté serveur, stockage chiffré et conformité RGPD native.
+        </div>
+      </article>
+
+      <!-- Vignerons -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-num">P/05</span>
+          <span class="project-status status-progress">En cours</span>
+        </div>
+        <h3 class="project-title">Prospection Vignerons</h3>
+        <p class="project-desc">Pipeline de prospection multi-agents pour le secteur viticole. Scraping de domaines, génération d'emails personnalisés via Claude, CRM Airtable structuré (contacts, cuvées, campagnes).</p>
+        <div class="project-stack">
+          <span>Make</span>
+          <span>Airtable</span>
+          <span>Claude API</span>
+        </div>
+        <div class="project-highlight">
+          Pack Sérénité en construction — offre clé-en-main pour vignerons indépendants.
+        </div>
+      </article>
+
+      <!-- Planning équipe -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-num">P/06</span>
+          <span class="project-status status-live">En production</span>
+        </div>
+        <h3 class="project-title">Planning Équipe</h3>
+        <p class="project-desc">Application de gestion des plannings pour équipes terrain. Pointage, congés, remplacements et exports paie — interface mobile pensée pour managers non-techniques.</p>
+        <div class="project-stack">
+          <span>AppSheet</span>
+          <span>Google Sheets</span>
+        </div>
+        <div class="project-highlight">
+          Stack Google native : zéro coût d'infra, intégration directe avec Google Workspace.
+        </div>
+      </article>
+
+      <!-- Ebooks -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-num">P/07</span>
+          <span class="project-status status-progress">En cours</span>
+        </div>
+        <h3 class="project-title">Création d'Ebooks IA</h3>
+        <p class="project-desc">Pipeline automatisé de création d'ebooks et de produits digitaux. Logique conditionnelle de modèles et tokens, stockage Drive, distribution Gumroad / Etsy.</p>
+        <div class="project-stack">
+          <span>Airtable</span>
+          <span>Make</span>
+          <span>Claude API</span>
+          <span>Gumroad</span>
+        </div>
+        <div class="project-highlight">
+          Trois verticaux ciblés : vignerons, maisons d'hôtes, conciergeries.
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- VERTICAUX -->
+  <section class="verticals">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Secteurs où je suis <em>déjà outillé</em></h2>
+      <p class="section-sub">Solutions packagées et adaptées à des métiers spécifiques. Si tu reconnais le tien, on gagne du temps dès la première discussion.</p>
+    </div>
+
+    <div class="verticals-grid">
+      <div class="vertical">
+        <div class="vertical-icon">🏡</div>
+        <h3>Maisons d'hôtes</h3>
+        <p>Livret d'accueil multilingue, automatisation check-in/check-out, suivi des réservations.</p>
+      </div>
+      <div class="vertical">
+        <div class="vertical-icon">🍷</div>
+        <h3>Vignerons</h3>
+        <p>CRM B2B, gestion des cuvées et millésimes, campagnes de prospection automatisées.</p>
+      </div>
+      <div class="vertical">
+        <div class="vertical-icon">💇</div>
+        <h3>Coiffeurs &amp; Planity</h3>
+        <p>Outils complémentaires à Planity — fidélisation, relances clients, statistiques avancées.</p>
+      </div>
+      <div class="vertical">
+        <div class="vertical-icon">🔨</div>
+        <h3>Artisans BTP</h3>
+        <p>Suivi de chantier mobile, devis, planning équipe, communication client automatisée.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section class="parcours" id="parcours">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Un parcours <em>atypique</em> qui fait la différence</h2>
+      <p class="section-sub">Le no-code n'est pas un point de départ, c'est un point d'arrivée. Voilà comment j'y suis arrivé.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-content">
+          <h4>Product Builder No-Code</h4>
+          <p>Certification RNCP39108 (Niveau 6) à l'École Cube. Création de Prompts &amp; Flow, structure auto-entrepreneur dédiée aux missions no-code et produits digitaux.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">~2020</div>
+        <div class="timeline-content">
+          <h4>Conseiller emploi</h4>
+          <p>Accompagnement de demandeurs d'emploi et de chefs de projet en reconversion. Compréhension fine des enjeux RH et du marché du travail.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">~2015</div>
+        <div class="timeline-content">
+          <h4>Administration publique</h4>
+          <p>Gestion de dossiers complexes, processus structurés, exigence de conformité. La rigueur appliquée plus tard à mes projets no-code.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">~2008</div>
+        <div class="timeline-content">
+          <h4>Banque &amp; relation client</h4>
+          <p>Conseil clientèle, analyse de besoin, vente de solutions adaptées. La base de mon approche commerciale aujourd'hui.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">~2000</div>
+        <div class="timeline-content">
+          <h4>Achats textile &amp; business analysis</h4>
+          <p>Négociation fournisseurs, analyse de marché, gestion de stock. Premières expériences en data et en pilotage opérationnel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">On <em>en parle</em> ?</h2>
+        <p class="section-sub">Mission freelance, poste salarié, ou simple échange autour d'un projet — réponse sous 24h en semaine.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mgodpnbz" method="POST">
+        <div class="form-row">
+          <label class="form-field">
+            <span>Nom</span>
+            <input type="text" name="name" required placeholder="Ton nom" />
+          </label>
+          <label class="form-field">
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="ton@email.com" />
+          </label>
+        </div>
+
+        <label class="form-field">
+          <span>Tu es...</span>
+          <select name="profile" required>
+            <option value="">Choisis une option</option>
+            <option value="entreprise">Une entreprise / un indépendant avec un projet</option>
+            <option value="recruteur">Un recruteur / une équipe qui recrute</option>
+            <option value="curieux">Un curieux qui veut juste discuter</option>
+          </select>
+        </label>
+
+        <label class="form-field">
+          <span>Ton message</span>
+          <textarea name="message" rows="5" required placeholder="Décris ton projet, ton besoin, ou ton poste — pas besoin d'être exhaustif, on creusera ensuite."></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-lg">
+          Envoyer le message
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+
+      <div class="contact-direct">
+        <p>Ou en direct :</p>
+        <div class="contact-links">
+          <a href="mailto:yjou22@gmail.com">📧 yjou22@gmail.com</a>
+          <a href="https://www.linkedin.com/in/yvanjoubert" target="_blank" rel="noopener">💼 LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <span class="nav-logo-mark">⚡</span>
+        <strong>Prompts &amp; Flow</strong>
+      </div>
+      <div class="footer-meta">
+        <span>Yvan Joubert · Auto-entrepreneur</span>
+        <span>·</span>
+        <span>Les Chères, Rhône</span>
+        <span>·</span>
+        <span>© 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
