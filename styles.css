@@ -919,3 +919,40 @@ section {
     transition-duration: 0.01ms !important;
   }
 }
+/* ============== BOUTONS PROJETS ============== */
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--border);
+}
+
+.project-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: var(--bg);
+  transition: all 0.2s;
+}
+
+.project-cta:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  transform: translateY(-1px);
+}
+
+.project-cta-arrow {
+  font-size: 0.9rem;
+  line-height: 1;
+}
