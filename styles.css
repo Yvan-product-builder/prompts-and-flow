@@ -5,7 +5,7 @@
 
 :root {
   /* Theme: Dark (default) */
-  --bg: #0a0a0a;
+  --bg: #0F1419;
   --bg-elevated: #131313;
   --bg-card: #161616;
   --border: #262626;
@@ -13,8 +13,10 @@
   --text: #f5f5f5;
   --text-muted: #999;
   --text-faint: #666;
-  --accent: #e8ff3a;
-  --accent-hover: #d4eb1f;
+  --accent: #EF9F27;
+  --accent-hover: #FAC775;
+  --accent-light: #FAC775;
+  --accent-dark: #BA7517;
   --accent-text: #0a0a0a;
   --noise-opacity: 0.03;
 }
@@ -28,9 +30,11 @@
   --text: #0f0f0f;
   --text-muted: #5a5a5a;
   --text-faint: #999;
-  --accent: #1a1a1a;
-  --accent-hover: #000;
-  --accent-text: #e8ff3a;
+  --accent: #BA7517;
+  --accent-hover: #854F0B;
+  --accent-light: #FAC775;
+  --accent-dark: #854F0B;
+  --accent-text: #0F1419;
   --noise-opacity: 0.02;
 }
 
