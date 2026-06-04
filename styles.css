@@ -497,13 +497,17 @@ section {
 }
 
 .service-card:hover {
-  border-color: var(--border-strong);
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 4%, var(--bg-card));
   transform: translateY(-4px);
+  box-shadow: 0 20px 40px -20px color-mix(in srgb, var(--accent) 25%, transparent);
 }
 
-.service-card-accent {
+/* Touch (mobile) : le :hover ne se déclenche pas, on simule un état actif au tap */
+.service-card:active {
   border-color: var(--accent);
-  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 8%, var(--bg-card)) 0%, var(--bg-card) 60%);
+  background: color-mix(in srgb, var(--accent) 4%, var(--bg-card));
+  transform: translateY(-2px);
 }
 
 .service-tag {
