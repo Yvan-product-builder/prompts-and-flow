@@ -125,6 +125,11 @@ body::before {
   filter: drop-shadow(0 0 8px var(--accent));
 }
 
+/* Logo court (P&F) réservé aux très petits écrans */
+.nav-logo-short {
+  display: none;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -918,6 +923,13 @@ section {
 }
 
 /* ============== RESPONSIVE ============== */
+/* Tablet : nom légèrement réduit */
+@media (max-width: 1023px) {
+  .nav-name {
+    font-size: 1.2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .nav {
     padding: 1rem;
@@ -931,9 +943,13 @@ section {
     display: none;
   }
 
-  .nav-sep,
+  /* Le nom reste visible sur mobile (identité), juste réduit */
   .nav-name {
-    display: none;
+    font-size: 1rem;
+  }
+
+  .nav-sep {
+    font-size: 0.8rem;
   }
 
   .hero {
@@ -956,6 +972,41 @@ section {
   .footer-inner {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+/* Petit mobile : nom encore réduit + logo raccourci si l'espace manque */
+@media (max-width: 479px) {
+  .nav {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .nav-name {
+    font-size: 0.9rem;
+  }
+
+  .nav-left {
+    gap: 0.5rem;
+  }
+
+  .theme-toggle {
+    margin-left: 0.5rem;
+  }
+}
+
+/* Très petit écran : logo réduit à "P&F" + CTA compact pour éviter le débordement */
+@media (max-width: 360px) {
+  .nav-logo-full {
+    display: none;
+  }
+
+  .nav-logo-short {
+    display: inline-block;
+  }
+
+  .nav-cta {
+    padding: 0.45rem 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
