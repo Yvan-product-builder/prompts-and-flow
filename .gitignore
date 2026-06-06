@@ -1,2 +1,6 @@
 # Claude Code local config
 .claude/
+
+# Cache Wrangler / Cloudflare
+.wrangler/
+.DS_Store
