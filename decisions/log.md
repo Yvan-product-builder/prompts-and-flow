@@ -14,3 +14,11 @@
 - Produits digitaux : Livret prix 49€ → 97€ (nouvelle version avec inventaire interactif, badge ambre 'Nouveau', desc refondue). Lien Gumroad l/livret-accueil-digital conservé en placeholder (page pas encore live → 404 attendu jusqu'à republication).
 - Cache-bust appliqué (styles.css/script.js ?v=20260606-1) ; .wrangler/ ajouté au .gitignore.
 - Déploiement via git push origin main (projet Cloudflare 'prompts-and-flow' connecté à GitHub — pas de wrangler deploy direct).
+2026-06-09 - Intégration du nouveau logo officiel Prompts & Flow (gold #B8975F + charcoal #2D2A26) :
+- Sources (4 PNG fond crème opaque) copiées dans images/logos/ : logo-principal, logo-compact, symbol, logo-mono. Détourées via System.Drawing (fond #fafafa → transparent).
+- Header : choix HYBRIDE après tests visuels. Le lock-up complet (gros « & » + petit wordmark fin) reste superbe en thème CLAIR mais le wordmark devient mat/gris en thème SOMBRE (vue par défaut système) — limite géométrique, pas de couleur (testé crème ET or, downscaling de strokes fins clairs sur fond sombre). Retenu : symbole « & » gold détouré (logo-mark.png) + « Prompts & Flow » en VRAI texte (Inter Tight 700, « & » en accent gold) → net sur les 2 thèmes. Lien header sur « / » (home).
+- Favicon : symbole « & » seul, PNG 16/32/180 (apple-touch) générés depuis symbol.png, remplacent l'ancien favicon SVG ⚡.
+- Footer : même couple mark + wordmark texte (plus petit), s'adapte au thème via var(--text).
+- Variantes dispo dans images/logos/ : originaux (principal/compact/symbol/mono) + logo-header-light/dark.png (logo complet détouré, texte charcoal/crème) + logo-mark.png + favicons.
+- Anciennes classes logo texte (.nav-logo-mark / -full / -short, ⚡) supprimées.
+- Cache-bust ?v=20260609-1 sur styles.css, script.js, logo-mark, favicons.
