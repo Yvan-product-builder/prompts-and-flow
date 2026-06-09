@@ -29,3 +29,11 @@
 - Classes hybrides (.nav-mark/.nav-word/.footer-mark/.footer-word) supprimées du CSS ; logo-mark.png (symbole « & » de l'hybride) supprimé du repo.
 - Tradeoff connu accepté : en thème sombre le wordmark fin paraît légèrement mat (limite géométrique du downscaling de traits fins clairs sur fond sombre), couleur cream choisie pour maximiser la lisibilité.
 - Cache-bust ?v=20260609-2 sur styles.css, script.js, logo-header-dark/light, favicons.
+2026-06-09 - Header mobile rétabli complet (demande utilisateur après le rollback) : le header mobile épuré (logo seul + CTA) supprimait trop d'éléments. Rétablissement sur <768px :
+- Logo agrandi 35px → 46px (swap clair/sombre conservé).
+- « · Yvan Joubert » rétabli (nom compacté à 1rem, 0.92rem sous 500px).
+- Ampoule toggle thème rétablie (icône 28→24px, marges réduites).
+- Bouton CTA : libellé court « Contact » en mobile (2 <span> .cta-full/.cta-short permutés par CSS, « Me contacter » conservé en desktop) + padding réduit + padding nav resserré (0.7rem) sous 500px.
+- Tout tient sur 1 ligne sans débordement : vérifié par mesure DOM à 412px (Pixel 7a) → nav.scrollWidth=412=clientWidth (0 débordement), bouton « Contact » à 11px du bord, logo h=46, nom et ampoule visibles. Méthode de capture mobile fiable = iframe forcé à 412px (Edge headless fausse les --window-size étroits).
+- Desktop strictement inchangé.
+- Cache-bust ?v=20260609-3 sur styles.css.
