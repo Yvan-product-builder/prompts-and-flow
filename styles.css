@@ -105,32 +105,23 @@ body::before {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
   text-decoration: none;
 }
 
-/* Symbole "&" gold officiel (s'adapte aux 2 thèmes, fond transparent) */
-.nav-mark {
-  height: 42px;
+/* Logo image complet : hauteur fixe, largeur auto, swap selon thème */
+.logo-img {
+  height: 46px;
   width: auto;
   display: block;
 }
 
-/* Wordmark en vrai texte : net sur clair ET sombre, "&" en accent gold */
-.nav-word {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 700;
-  font-size: 1.3rem;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  color: var(--text);
-  white-space: nowrap;
-}
+/* Thème sombre (défaut) : variante texte cream */
+.logo-light { display: none; }
+.logo-dark { display: block; }
 
-.nav-word .amp,
-.footer-word .amp {
-  color: var(--accent);
-}
+/* Thème clair : variante texte charcoal */
+[data-theme="light"] .logo-dark { display: none; }
+[data-theme="light"] .logo-light { display: block; }
 
 .nav-sep {
   color: var(--border-strong);
@@ -1061,26 +1052,14 @@ section {
   color: var(--text);
 }
 
-/* Logo footer : symbole "&" + wordmark texte, un peu plus petit que le header */
+/* Logo footer : image complète, un peu plus petite que le header */
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
-.footer-mark {
-  height: 30px;
-  width: auto;
-  display: block;
-}
-
-.footer-word {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 700;
-  font-size: 1.05rem;
-  letter-spacing: -0.02em;
-  color: var(--text);
-  white-space: nowrap;
+.footer-logo .logo-img {
+  height: 34px;
 }
 
 .footer-meta {
@@ -1144,37 +1123,22 @@ section {
     display: none;
   }
 
-  /* Logo réduit pour tenir le header sur 1 ligne (Pixel 7a 412px) */
-  .nav-mark {
-    height: 32px;
+  /* Header mobile épuré : logo image complet + bouton CTA uniquement */
+  .logo-img {
+    height: 35px;
   }
 
-  .nav-word {
-    font-size: 1rem;
-  }
-
-  /* Le nom reste visible sur mobile (identité), juste réduit */
-  .nav-name {
-    font-size: 0.85rem;
-  }
-
-  .nav-sep {
-    font-size: 0.7rem;
-  }
-
-  .icon-bulb {
-    width: 24px;
-    height: 24px;
-  }
-
+  /* On masque nom + séparateur + toggle thème pour libérer la place
+     (le thème suit alors le réglage système du visiteur) */
+  .nav-sep,
+  .nav-name,
   .theme-toggle {
-    margin-left: 0.45rem;
-    padding: 0.25rem;
+    display: none;
   }
 
   .nav-cta {
-    padding: 0.4rem 0.75rem;
-    font-size: 0.75rem;
+    padding: 0.5rem 0.95rem;
+    font-size: 0.8rem;
   }
 
   .hero {
@@ -1212,12 +1176,8 @@ section {
 
 /* Très petits écrans : logo encore réduit pour libérer la place (Pixel 7a 412px) */
 @media (max-width: 500px) {
-  .nav-mark {
-    height: 28px;
-  }
-
-  .nav-word {
-    font-size: 0.92rem;
+  .logo-img {
+    height: 32px;
   }
 
   .nav-left {

@@ -22,3 +22,10 @@
 - Variantes dispo dans images/logos/ : originaux (principal/compact/symbol/mono) + logo-header-light/dark.png (logo complet détouré, texte charcoal/crème) + logo-mark.png + favicons.
 - Anciennes classes logo texte (.nav-logo-mark / -full / -short, ⚡) supprimées.
 - Cache-bust ?v=20260609-1 sur styles.css, script.js, logo-mark, favicons.
+2026-06-09 - RETOUR ARRIÈRE : abandon de l'hybride, retour au LOGO IMAGE COMPLET partout (header + footer), pour préserver l'identité officielle du lock-up (pas de version reconstruite) :
+- Header & footer : <img> du logo complet détouré, swap selon [data-theme]. Clair = logo-header-light.png (texte charcoal #2D2A26 conservé). Sombre = logo-header-dark.png (texte recoloré cream #FAF6EE, « & » or conservé, fond transparent) ; copie exposée sous 00-logo-principal-HD-dark.png (nom demandé au cahier des charges). Génération via System.Drawing : détection des pixels neutres (charcoal) → recolorés, pixels saturés (or) → conservés, fond crème → transparent, alpha gamma 0.5 + dilatation 3x3 en mode sombre pour épaissir les traits fins.
+- Tailles : header 46px (desktop) → 35px (<768px) → 32px (<500px) ; footer 34px.
+- Mobile <768px épuré : « · Yvan Joubert » + ampoule toggle masqués (display:none), seuls logo + bouton « Me contacter » restent. Vérifié à 412px (Pixel 7a) via mesure DOM : nav.scrollWidth=412 (aucun débordement), bouton « Me contacter » à 281→398px = entièrement visible. NB : les captures Edge --window-size=412 autonomes étaient trompeuses (Edge impose une largeur de fenêtre minimale > 412 qui élargit la nav fixed) ; rendu réel validé via iframe forcé à 412px.
+- Classes hybrides (.nav-mark/.nav-word/.footer-mark/.footer-word) supprimées du CSS ; logo-mark.png (symbole « & » de l'hybride) supprimé du repo.
+- Tradeoff connu accepté : en thème sombre le wordmark fin paraît légèrement mat (limite géométrique du downscaling de traits fins clairs sur fond sombre), couleur cream choisie pour maximiser la lisibilité.
+- Cache-bust ?v=20260609-2 sur styles.css, script.js, logo-header-dark/light, favicons.
