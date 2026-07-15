@@ -37,3 +37,13 @@
 - Tout tient sur 1 ligne sans débordement : vérifié par mesure DOM à 412px (Pixel 7a) → nav.scrollWidth=412=clientWidth (0 débordement), bouton « Contact » à 11px du bord, logo h=46, nom et ampoule visibles. Méthode de capture mobile fiable = iframe forcé à 412px (Edge headless fausse les --window-size étroits).
 - Desktop strictement inchangé.
 - Cache-bust ?v=20260609-3 sur styles.css.
+2026-07-15 - Mentions légales et correction de l'identité légale (commit 9b5fa24) :
+- Création de /mentions-legales (mentions-legales.html à la racine, servi sans extension par Cloudflare Pages) : obligation LCEN art. 6-III, jusqu'ici absente du site. Couvre éditeur, hébergeur, propriété intellectuelle, RGPD, cookies, droit applicable. Page en noindex/follow, head allégé (ni canonical, ni og/twitter, ni JSON-LD) ; header repris de l'accueil avec ancres passées en absolu (/#projets, /#produits…) sans quoi le menu serait mort hors page d'accueil.
+- RGPD : Formspree (US) identifié comme sous-traitant du formulaire de contact, aux côtés de Cloudflare et Google ; transfert hors UE déclaré (clauses contractuelles types + Data Privacy Framework). Cloudflare Web Analytics déclaré comme mesure d'audience sans cookie ni fingerprinting → aucune bannière de consentement nécessaire.
+- Identité légale : publication du SIRET du siège (Lyon). Un second SIRET existe pour l'ancien siège ; tous les documents pro sont désormais alignés sur celui du siège.
+- Confidentialité : adresse e-mail personnelle remplacée par l'adresse professionnelle sur l'ensemble du site ; commune de domicile remplacée par Lyon dans le footer et le JSON-LD (streetAddress + postalCode ajoutés au passage → bénéfice SEO local).
+- carte.html : ajout d'un footer (identité + lien mentions légales), la page n'en avait aucun.
+- styles.css : ajout des classes .legal* et .footer-link en fin de fichier, uniquement à partir des variables existantes (--text / --accent / --border…), sans modifier aucune règle existante.
+- Dette technique constatée, non traitée : carte.html ne charge ni styles.css ni script.js — styles inline, couleurs en dur, figée en thème sombre, ignore la bascule de thème.
+- À retenir — convention de cache-bust : les assets sont appelés avec un paramètre ?v=, Cache-Control: max-age=14400 (4 h). Le ?v= de styles.css n'a pas été incrémenté lors de ce commit, ce qui a provoqué un affichage sans styles jusqu'au rafraîchissement forcé. À incrémenter systématiquement à chaque modification de styles.css.
+- À faire : tester le formulaire de contact en production (compteur Formspree à 0/50, jamais vérifié depuis la mise en ligne).
