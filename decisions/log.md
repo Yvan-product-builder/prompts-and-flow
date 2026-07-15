@@ -10,7 +10,7 @@
 2026-06-04 - UX : harmoniser cards Services (mêmes états repos + hover). Cause de l'asymétrie = classe .service-card-accent sur la card « Poste salarié » (fond dégradé crème + bordure ambre permanents) qui masquait son hover. Suppression de la classe d'exception (HTML + règle CSS). Les 2 cards partagent désormais : repos = fond --bg-card + bordure --border ; hover = bordure --accent + fond légèrement teinté (accent 4%) + translateY(-4px) + shadow ambre, transition 0.3s. Ajout d'un état :active pour le feedback tactile mobile. Cache bump v=20260604-7.
 2026-06-04 - Activation Cloudflare Web Analytics (token 6bfe361a... première mesure officielle du trafic)
 2026-06-06 - Mise à jour portfolio :
-- Projets livrés : réparation lien 'Livret accueil' (renommé en 'Livret d'accueil digital', URL démo livret-prompts-and-flow.pages.dev, tags Cloudflare Pages/Multi-langue/PWA/Inventaire interactif) + ajout P/10 'Mini-site Marchés' (marches.promptsandflow.com)
+- Projets livrés : réparation lien 'Livret accueil' (renommé en 'Livret d'accueil digital', URL démo demo.promptsandflow.com, tags Cloudflare Pages/Multi-langue/PWA/Inventaire interactif) + ajout P/10 'Mini-site Marchés' (marches.promptsandflow.com)
 - Produits digitaux : Livret prix 49€ → 97€ (nouvelle version avec inventaire interactif, badge ambre 'Nouveau', desc refondue). Lien Gumroad l/livret-accueil-digital conservé en placeholder (page pas encore live → 404 attendu jusqu'à republication).
 - Cache-bust appliqué (styles.css/script.js ?v=20260606-1) ; .wrangler/ ajouté au .gitignore.
 - Déploiement via git push origin main (projet Cloudflare 'prompts-and-flow' connecté à GitHub — pas de wrangler deploy direct).
