@@ -556,6 +556,13 @@ section {
   font-weight: bold;
 }
 
+.service-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
 .service-link {
   color: var(--text);
   text-decoration: none;
